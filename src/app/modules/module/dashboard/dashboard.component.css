@@ -1,0 +1,42 @@
+.dashboard-card-container {
+    @apply
+    grid
+    grid-cols-4
+    text-center
+    md:shadow-gray-400
+    gap-4
+}
+
+.dashboard-card-item {
+    @apply
+    bg-white
+    md:shadow-gray-300
+    shadow-lg
+    rounded-md
+    p-3
+    outline
+    outline-gray-300
+}
+
+.dashboard-card-item h4 {
+    @apply
+    pt-4
+}
+
+.grid-container {
+    @apply
+    col-span-12 
+    bg-white 
+    rounded-md
+    mt-10
+}
+
+.grid-header {
+    @apply
+    p-4 
+    border-b 
+}
+
+table {
+    width: 100%;
+}

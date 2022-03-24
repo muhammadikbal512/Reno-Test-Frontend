@@ -1,0 +1,91 @@
+.container {
+    @apply
+    w-60 
+    h-full 
+    shadow-md 
+    bg-white
+}
+
+.container-header {
+    @apply
+    pt-4 
+    pb-2 
+    px-6
+}
+
+.header-icon {
+    @apply
+    flex 
+    items-center
+}
+
+.header-text {
+    @apply
+    grow 
+    ml-3 
+    mt-2
+}
+
+.header-text p {
+    @apply
+    text-sm 
+    font-semibold 
+    text-blue-600
+}
+
+.container-items {
+    @apply
+    relative 
+    px-1
+}
+
+.container-items li a {
+    @apply
+    flex
+    items-center
+    text-sm
+    py-4
+    px-6
+    h-12
+    overflow-hidden
+    text-gray-700
+    text-ellipsis
+    whitespace-nowrap
+    rounded
+    hover:text-blue-600
+    hover:bg-blue-50
+    transition
+    duration-300 ease-in-out 
+    cursor-pointer
+}
+
+li {
+    @apply
+    relative
+}
+
+.items-dropdown {
+    @apply
+    relative
+}
+
+.items-dropdown li a {
+    @apply
+    flex
+    items-center
+    text-xs
+    py-4
+    pl-12
+    pr-6
+    h-6
+    overflow-hidden
+    text-gray-700
+    text-ellipsis
+    whitespace-nowrap
+    rounded
+    hover:text-blue-600
+    hover:bg-blue-50
+    transition
+    duration-100
+    ease-in-out
+}

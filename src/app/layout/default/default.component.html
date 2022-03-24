@@ -1,0 +1,13 @@
+<div class="default-container">
+    <app-sidebar></app-sidebar>
+    <main class="main">
+        <app-header (btnClick)="getOnClick()"></app-header>
+        <div class="main-content">
+            <h1>Dashboard</h1>
+            <div class="main-content-board">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </main>
+</div>

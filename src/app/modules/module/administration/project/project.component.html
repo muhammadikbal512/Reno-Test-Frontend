@@ -1,0 +1,17 @@
+<div class="grid-container">
+    <div class="grid-header">
+        <div class="search-container">
+            <span class="search-icon bx bx-search">
+                Project Filter
+            </span>
+        </div>
+        <div class="grid-header-right">
+            <button (click)="openDialog()" mat-flat-button class="create-button">
+                <span class="create-text">Create</span>
+            </button>
+        </div>
+    </div>
+    <div class="p-4">
+        <app-project-table></app-project-table>
+    </div>
+</div>

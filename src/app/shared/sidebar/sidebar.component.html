@@ -1,0 +1,137 @@
+<div class="container" id="sidenavSecExample">
+    <div class="container-header">
+        <a routerLink="/Home">
+            <div class="header-icon">
+                <div class="shrink-0">
+                    <span class="material-icons">
+                        settings
+                    </span>
+                </div>
+                <div class="header-text">
+                    <p>RENO TEST</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <ul class="container-items">
+        <li id="dropdown-dashboard">
+            <a routerLink="dashboard" data-mdb-ripple="true" data-mdb-ripple-color="primary"
+                data-bs-toggle="collapse" data-bs-target="#collapseDropdown-dashboard" aria-expanded="false"
+                aria-controls="collapseDropdown-dashboard">
+                <hero-icon name="globe-alt" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li id="dropdown-administration">
+            <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapsedropdown-administration">
+                <hero-icon name="document-report" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Administration</span>
+                <hero-icon name="chevron-down" class="w-4 h-4" style="margin-left: auto;"></hero-icon>
+            </a>
+            <ul class="items-dropdown accordion-collapse collapse" id="collapsedropdown-administration"
+                aria-labelledby="dropdown-administration" data-bs-parent="#sidenavSecExample">
+                <li>
+
+                    <a routerLink="administration/project" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="folder-open" class="w-4 h-4 mr-3"></hero-icon>
+                        Project
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="administration/role" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="user-group" class="w-4 h-4 mr-3"></hero-icon>
+                        Role
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="administration/user" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="user-circle" class="w-4 h-4 mr-3"></hero-icon>
+                        User
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="dropdown-api">
+            <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapsedropdown-api">
+                <hero-icon name="code" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Api</span>
+                <hero-icon name="chevron-down" class="w-4 h-4" style="margin-left: auto;"></hero-icon>
+            </a>
+            <ul class="items-dropdown accordion-collapse collapse" id="collapsedropdown-api"
+                aria-labelledby="dropdown-api" data-bs-parent="#sidenavSecExample">
+                <li>
+                    <a routerLink="api/schema" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="cube-transparent" class="w-4 h-4 mr-3"></hero-icon>
+                        Schema
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="api/sandbox" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="collection" class="w-4 h-4 mr-3"></hero-icon>
+                        Sandbox</a>
+                </li>
+                <li>
+                    <a routerLink="api/card-repository" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="credit-card" class="w-4 h-4 mr-3"></hero-icon>
+                        Card Repository</a>
+                </li>
+                <li>
+                    <a routerLink="api/response-builder" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="refresh" class="w-4 h-4 mr-3"></hero-icon>
+                        Response Builder</a>
+                </li>
+            </ul>
+        </li>
+        <li id="dropdown-testbed">
+            <a routerLink="test-bed" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapsedropdown-testbed">
+                <hero-icon name="adjustments" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Test Bed</span>
+            </a>
+        </li>
+        <li id="dropdown-performance">
+            <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapsedropdown-performance">
+                <hero-icon name="chart-bar" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Performance</span>
+                <hero-icon name="chevron-down" class="w-4 h-4" style="margin-left: auto;"></hero-icon>
+            </a>
+            <ul class="items-dropdown accordion-collapse collapse" id="collapsedropdown-performance"
+                aria-labelledby="dropdown-performance" data-bs-parent="#sidenavSecExample">
+                <li>
+                    <a routerLink="performance/load-generator" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="clock" class="w-4 h-4 mr-3"></hero-icon>
+                        Load Generator</a>
+                </li>
+            </ul>
+        </li>
+        <li id="dropdown-statistic">
+            <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapsedropdown-statistic">
+                <hero-icon name="clipboard-list" class="w-4 h-4 mr-3"></hero-icon>
+                <span>Statistic</span>
+                <hero-icon name="chevron-down" class="w-4 h-4" style="margin-left: auto;"></hero-icon>
+            </a>
+            <ul class="items-dropdown accordion-collapse collapse" id="collapsedropdown-statistic"
+                aria-labelledby="dropdown-statistic" data-bs-parent="#sidenavSecExample">
+                <li>
+                    <a routerLink="statistic/functional-report" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="chart-square-bar" class="w-4 h-4 mr-3"></hero-icon>
+                        Functional Report</a>
+                </li>
+                <li>
+                    <a routerLink="statistic/performance-report" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="newspaper" class="w-4 h-4 mr-3"></hero-icon>
+                        Performance Report</a>
+                </li>
+                <li>
+                    <a routerLink="statistic/sandbox-report" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="globe" class="w-4 h-4 mr-3"></hero-icon>
+                        Sandbox Report</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+<form class="p-8">
+    <div>
+        <div class="flex space-x-5">
+            <div class="input-container" style="width: 50%;">
+                <input type="text" placeholder=" " required="">
+                <label class="input-label">Name</label>
+            </div>
+            <div class="">
+                <input type="checkbox" class="mt-5">
+                <label class="ml-3">Upload</label>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder=" " required="">
+            <label class="input-label">Description</label>
+        </div>
+        <div class="flex space-x-5">
+            <div class="input-container">
+                <input type="date" placeholder=" " required="">
+                <label class="input-label">Protocol</label>
+            </div>
+            <div class="input-container">
+                <input type="date" placeholder=" " required="">
+                <label class="input-label">Date Format</label>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder=" " required="">
+            <label class="input-label">Zip Code</label>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn-submit-form">Create</button>
+        <button (click)="backClicked()" type="submit" class="btn-submit-form ml-5">Cancel</button>
+    </div>
+</form>

@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { DefaultModule } from './layout/default/default.module';
 import { NgChartsModule } from 'ng2-charts'
-
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,8 @@ import { NgChartsModule } from 'ng2-charts'
     BrowserAnimationsModule,
     MaterialModule,
     DefaultModule,
-    NgChartsModule
+    NgChartsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],

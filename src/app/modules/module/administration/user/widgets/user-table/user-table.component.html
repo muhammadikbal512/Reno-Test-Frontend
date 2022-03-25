@@ -16,6 +16,37 @@
                 </th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Reno.admin@renovite.com</p>
+                    <p>2 Projects</p>
+                </td>
+                <td>GMT + 7</td>
+                <td>Reno.admin@renovite.com</td>
+                <td class="flex justify-evenly mt-5">
+                    <hero-icon routerLink="edit" name="pencil-alt" class="w-4 h-4 cursor-pointer"></hero-icon>
+                    <hero-icon data-bs-toggle="modal" data-bs-target="#modalView" name="eye"
+                        class="w-4 h-4 cursor-pointer"></hero-icon>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>
+
+<!-- View Role -->
+<div class="modal fade" id="modalView" tabindex="-1" aria-labelledby="modalViewLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="exampleModalLabel">Project Info</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Tabel Here
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="footer-btn-yes" data-bs-dismiss="modal">Yes</button>
+                <button type="button" class="footer-btn-no">No</button>
+            </div>
+        </div>

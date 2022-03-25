@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BtnBackService } from 'src/app/modules/services/btn-back.service';
 
 @Component({
   selector: 'app-role-create',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoleCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private btnBack: BtnBackService) { }
 
   ngOnInit(): void {
+  }
+
+  backClicked() {
+    this.btnBack.backClicked();
   }
 
 }

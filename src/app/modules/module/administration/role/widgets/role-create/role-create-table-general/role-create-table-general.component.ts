@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-role-create-table-general',
   templateUrl: './role-create-table-general.component.html',

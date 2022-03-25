@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SchemaCreateComponent } from './widgets/schema-create/schema-create.component';
 
 @Component({
   selector: 'app-schema',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SchemaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    this.dialog.open(SchemaCreateComponent,{
+      width: '600px'
+    })
   }
 
 }

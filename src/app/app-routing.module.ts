@@ -17,6 +17,13 @@ import { FunctionalReportComponent } from './modules/module/statistic/functional
 import { PerformanceReportComponent } from './modules/module/statistic/performance-report/performance-report.component';
 import { SandboxReportComponent } from './modules/module/statistic/sandbox-report/sandbox-report.component';
 import { UserEditComponent } from './modules/module/administration/user/widgets/user-edit/user-edit.component';
+import { ProjectCreateComponent } from './modules/module/administration/project/widgets/project-create/project-create.component';
+import { ProjectEditComponent } from './modules/module/administration/project/widgets/project-edit/project-edit.component';
+import { RoleCreateComponent } from './modules/module/administration/role/widgets/role-create/role-create.component';
+import { RoleEditComponent } from './modules/module/administration/role/widgets/role-edit/role-edit.component';
+import { SchemaCreateComponent } from './modules/module/api/schema/widgets/schema-create/schema-create.component';
+import { SchemaEditComponent } from './modules/module/api/schema/widgets/schema-edit/schema-edit.component';
+import { SandboxCreateComponent } from './modules/module/api/sandbox/widgets/sandbox-create/sandbox-create.component';
 
 const routes: Routes = [
   {
@@ -36,15 +43,50 @@ const routes: Routes = [
         children: [
           {
             path: 'project',
-            component: ProjectComponent
+            component: ProjectComponent,
+          },
+          {
+            path: 'project',
+            children: [
+              {
+                path: 'create',
+                component: ProjectCreateComponent
+              },
+              {
+                path: 'edit',
+                component: ProjectEditComponent
+              }
+            ]
           },
           {
             path: 'role',
-            component: RoleComponent
+            component: RoleComponent,
+          },
+          {
+            path: 'role',
+            children: [
+              {
+                path: 'create',
+                component: RoleCreateComponent
+              },
+              {
+                path: 'edit',
+                component: RoleEditComponent
+              }
+            ]
           },
           {
             path: 'user',
             component: UserComponent
+          },
+          {
+            path: 'user',
+            children: [
+              {
+                path: 'edit',
+                component: UserEditComponent
+              }
+            ]
           },
         ]
       },
@@ -56,8 +98,30 @@ const routes: Routes = [
             component: SchemaComponent
           },
           {
+            path: 'schema',
+            children: [
+              {
+                path: 'create',
+                component: SchemaCreateComponent
+              },
+              {
+                path: 'edit',
+                component: SchemaEditComponent
+              }
+            ]
+          },
+          {
             path: 'sandbox',
             component: SandboxComponent
+          },
+          {
+            path: 'sandbox',
+            children: [
+              {
+                path: 'create',
+                component: SandboxCreateComponent
+              },
+            ]
           },
           {
             path: 'card-repository',

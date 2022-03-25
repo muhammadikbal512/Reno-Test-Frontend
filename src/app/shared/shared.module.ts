@@ -29,6 +29,9 @@ import {
   cog,
   bell,
   questionMarkCircle,
+  pencilAlt,
+  eye,
+  trash
    } from 'ng-heroicon'
 
 
@@ -63,7 +66,10 @@ import {
       globe,
       cog,
       bell,
-      questionMarkCircle
+      questionMarkCircle,
+      pencilAlt,
+      eye,
+      trash
   }, {
       defaultHostDisplay: 'block',
   })
@@ -71,7 +77,8 @@ import {
   exports: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    HeroIconModule
   ]
 })
 export class SharedModule { }

@@ -37,6 +37,9 @@ import { ScriptEditComponent } from './modules/module/test-bed/testbed-script/wi
 import { SuiteCreateComponent } from './modules/module/test-bed/testbed-suite/widgets/suite-create/suite-create.component';
 import { SuiteEditComponent } from './modules/module/test-bed/testbed-suite/widgets/suite-edit/suite-edit.component';
 import { LoadCreateComponent } from './modules/module/performance/load-generator/widgets/load-create/load-create.component'
+import { LoadEditComponent } from './modules/module/performance/load-generator/widgets/load-edit/load-edit.component';
+import { FunctionalViewComponent } from './modules/module/statistic/functional-report/widgets/functional-view/functional-view.component';
+import { SandboxReportViewComponent } from './modules/module/statistic/sandbox-report/widgets/sandbox-report-view/sandbox-report-view.component';
 
 
 const routes: Routes = [
@@ -233,6 +236,10 @@ const routes: Routes = [
               {
                 path: 'create',
                 component: LoadCreateComponent
+              },
+              {
+                path: 'edit',
+                component: LoadEditComponent
               }
             ]
           }
@@ -246,12 +253,28 @@ const routes: Routes = [
             component: FunctionalReportComponent
           },
           {
+            path: 'functional-report',
+            children: [{
+              path: 'id',
+              component: FunctionalViewComponent
+            }]
+          },
+          {
             path: 'performance-report',
             component: PerformanceReportComponent
           },
           {
             path: 'sandbox-report',
             component: SandboxReportComponent
+          },
+          {
+            path: 'sandbox-report',
+            children: [
+              {
+                path: 'id',
+                component: SandboxReportViewComponent
+              }
+            ]
           }
         ]
       },

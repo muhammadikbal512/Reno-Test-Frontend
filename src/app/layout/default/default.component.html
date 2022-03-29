@@ -1,11 +1,10 @@
 <div class="default-container">
-    <div [ngClass]="showSidebar ? 'block' : 'hidden'">
-        <app-sidebar></app-sidebar>
-    </div>
+
+    <app-sidebar></app-sidebar>
+
     <main class="main">
         <app-header (btnClick)="getOnClick()"></app-header>
         <div class="main-content">
-            <h1>Dashboard</h1>
             <div class="main-content-board">
                 <router-outlet></router-outlet>
             </div>

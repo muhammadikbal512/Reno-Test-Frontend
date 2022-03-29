@@ -1,0 +1,24 @@
+.dashboard-card-container {
+    @apply
+    grid
+    grid-cols-5
+    text-center
+    md:shadow-gray-400
+    gap-4
+}
+
+.dashboard-card-item {
+    @apply
+    bg-white
+    md:shadow-gray-300
+    shadow-lg
+    rounded-md
+    p-3
+    outline
+    outline-gray-300
+}
+
+.container {
+    /* zoom: 0.8; */
+    max-width: none;
+}

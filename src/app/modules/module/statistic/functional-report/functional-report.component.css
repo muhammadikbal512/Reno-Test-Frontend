@@ -1,0 +1,6 @@
+.grid-container {
+    @apply
+    col-span-1 
+    bg-white 
+    rounded-md
+  }

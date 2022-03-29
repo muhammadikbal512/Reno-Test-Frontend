@@ -85,11 +85,35 @@
             </ul>
         </li>
         <li id="dropdown-testbed">
-            <a routerLink="test-bed" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+            <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
                 data-bs-target="#collapsedropdown-testbed">
                 <hero-icon name="adjustments" class="w-4 h-4 mr-3"></hero-icon>
                 <span>Test Bed</span>
+                <hero-icon name="chevron-down" class="w-4 h-4" style="margin-left: auto;"></hero-icon>
             </a>
+            <ul class="items-dropdown accordion-collapse collapse" id="collapsedropdown-testbed"
+                aria-labelledby="dropdown-testbed" data-bs-parent="#sidenavSecExample">
+                <li>
+                    <a routerLink="test-bed/object" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="color-swatch" class="w-4 h-4 mr-3"></hero-icon>
+                        Object Repository</a>
+                </li>
+                <li>
+                    <a routerLink="test-bed/data" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="document-text" class="w-4 h-4 mr-3"></hero-icon>
+                        Data</a>
+                </li>
+                <li>
+                    <a routerLink="test-bed/script" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="puzzle" class="w-4 h-4 mr-3"></hero-icon>
+                        Script</a>
+                </li>
+                <li>
+                    <a routerLink="test-bed/suite" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                        <hero-icon name="view-boards" class="w-4 h-4 mr-3"></hero-icon>
+                        Suite</a>
+                </li>
+            </ul>
         </li>
         <li id="dropdown-performance">
             <a data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"

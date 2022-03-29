@@ -1,5 +1,7 @@
 <div class="default-container">
-    <app-sidebar></app-sidebar>
+    <div [ngClass]="showSidebar ? 'block' : 'hidden'">
+        <app-sidebar></app-sidebar>
+    </div>
     <main class="main">
         <app-header (btnClick)="getOnClick()"></app-header>
         <div class="main-content">

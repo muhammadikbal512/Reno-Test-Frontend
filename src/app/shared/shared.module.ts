@@ -8,7 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 
 import { 
   HeroIconModule,
-  documentReport, 
+  documentReport,
+  documentText, 
   chevronDown, 
   globeAlt,
   code, 
@@ -31,8 +32,15 @@ import {
   questionMarkCircle,
   pencilAlt,
   eye,
-  trash
-   } from 'ng-heroicon'
+  trash,
+  colorSwatch,
+  viewBoards,
+  puzzle,
+  plus,
+  play,
+  trendingUp,
+   } from 'ng-heroicon';
+import { ButtonBackComponent } from './button-back/button-back.component'
 
 
 
@@ -40,7 +48,8 @@ import {
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    ButtonBackComponent
   ],
   imports: [
     CommonModule,
@@ -69,7 +78,14 @@ import {
       questionMarkCircle,
       pencilAlt,
       eye,
-      trash
+      trash,
+      documentText,
+      colorSwatch,
+      viewBoards,
+      puzzle,
+      plus,
+      play,
+      trendingUp
   }, {
       defaultHostDisplay: 'block',
   })
@@ -78,7 +94,8 @@ import {
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    HeroIconModule
+    HeroIconModule,
+    ButtonBackComponent
   ]
 })
 export class SharedModule { }

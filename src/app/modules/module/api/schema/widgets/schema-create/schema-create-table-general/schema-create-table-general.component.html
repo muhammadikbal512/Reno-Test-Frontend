@@ -16,21 +16,27 @@
         </div>
         <div class="flex space-x-5">
             <div class="input-container">
-                <input type="date" placeholder=" " required="">
-                <label class="input-label">Protocol</label>
+                <label>Protocol</label>
+                <select class="form-select appearance-none" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
             <div class="input-container">
-                <input type="date" placeholder=" " required="">
-                <label class="input-label">Date Format</label>
+                <label>Date Format</label>
+                <select class="form-select appearance-none" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
         </div>
         <div class="input-container">
             <input type="text" placeholder=" " required="">
             <label class="input-label">Zip Code</label>
         </div>
-    </div>
-    <div class="text-center">
-        <button type="submit" class="btn-submit-form">Create</button>
-        <button (click)="backClicked()" type="submit" class="btn-submit-form ml-5">Cancel</button>
     </div>
 </form>

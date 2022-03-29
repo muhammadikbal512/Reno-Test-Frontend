@@ -1,1 +1,17 @@
-<p>card-repository works!</p>
+<div class="grid-container">
+    <div class="grid-header">
+        <div class="search-container">
+            <span class="search-icon bx bx-search">
+                Card Filter
+            </span>
+        </div>
+        <div class="grid-header-right">
+            <button routerLink="create" mat-flat-button class="create-button">
+                <a class="create-text">Create</a>
+            </button>
+        </div>
+    </div>
+    <div class="p-4">
+        <app-card-table></app-card-table>
+    </div>
+</div>

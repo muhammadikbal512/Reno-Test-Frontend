@@ -1,0 +1,26 @@
+<div class="grid-container">
+    <div class="grid-header">
+      <div class="search-container">
+        <span class="search-icon bx bx-search">
+          ATMSwitch_Sandbox
+        </span>
+      </div>
+      <div class="grid-header-right">
+  
+      </div>
+    </div>
+    <div class="p-4">
+      <mat-tab-group>
+        <mat-tab label="General Info"><app-sandbox-edit-table-general></app-sandbox-edit-table-general>
+        </mat-tab>
+        <mat-tab label="Requests"><app-sandbox-edit-table-request></app-sandbox-edit-table-request></mat-tab>
+        <mat-tab label="Advance Info"><app-sandbox-edit-table-advance></app-sandbox-edit-table-advance></mat-tab>
+        <mat-tab label="Rules"><app-sandbox-edit-table-rules></app-sandbox-edit-table-rules></mat-tab>
+        <mat-tab label="Client Registration"><app-sandbox-edit-table-client></app-sandbox-edit-table-client></mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn-submit-form">Create</button>
+        <button (click)="backClicked()" type="submit" class="btn-submit-form ml-5">Cancel</button>
+    </div>
+  </div>

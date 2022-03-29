@@ -24,6 +24,20 @@ import { RoleEditComponent } from './modules/module/administration/role/widgets/
 import { SchemaCreateComponent } from './modules/module/api/schema/widgets/schema-create/schema-create.component';
 import { SchemaEditComponent } from './modules/module/api/schema/widgets/schema-edit/schema-edit.component';
 import { SandboxCreateComponent } from './modules/module/api/sandbox/widgets/sandbox-create/sandbox-create.component';
+import { SandboxEditComponent } from './modules/module/api/sandbox/widgets/sandbox-edit/sandbox-edit.component';
+import { CardCreateComponent } from './modules/module/api/card-repository/widgets/card-create/card-create.component';
+import { CardEditComponent } from './modules/module/api/card-repository/widgets/card-edit/card-edit.component';
+import { TestbedDataComponent } from './modules/module/test-bed/testbed-data/testbed-data.component';
+import { TestbedObjectComponent } from './modules/module/test-bed/testbed-object/testbed-object.component';
+import { TestbedScriptComponent } from './modules/module/test-bed/testbed-script/testbed-script.component';
+import { TestbedSuiteComponent } from './modules/module/test-bed/testbed-suite/testbed-suite.component';
+import { TestbedDataCreateComponent } from './modules/module/test-bed/testbed-data/widgets/testbed-data-create/testbed-data-create.component';
+import { ScriptCreateComponent } from './modules/module/test-bed/testbed-script/widgets/script-create/script-create.component';
+import { ScriptEditComponent } from './modules/module/test-bed/testbed-script/widgets/script-edit/script-edit.component';
+import { SuiteCreateComponent } from './modules/module/test-bed/testbed-suite/widgets/suite-create/suite-create.component';
+import { SuiteEditComponent } from './modules/module/test-bed/testbed-suite/widgets/suite-edit/suite-edit.component';
+import { LoadCreateComponent } from './modules/module/performance/load-generator/widgets/load-create/load-create.component'
+
 
 const routes: Routes = [
   {
@@ -121,6 +135,10 @@ const routes: Routes = [
                 path: 'create',
                 component: SandboxCreateComponent
               },
+              {
+                path: 'edit',
+                component: SandboxEditComponent
+              }
             ]
           },
           {
@@ -128,21 +146,95 @@ const routes: Routes = [
             component: CardRepositoryComponent
           },
           {
+            path: 'card-repository',
+            children: [
+              {
+                path: 'create',
+                component: CardCreateComponent
+              },
+              {
+                path: 'edit',
+                component: CardEditComponent
+              }
+            ]
+          },
+          {
             path: 'response-builder',
             component: ResponseBuilderComponent
           },
         ]
-      },     
+      },
       {
         path: 'test-bed',
-        component: TestBedComponent
-      },
+        children: [ 
+          {
+            path: 'data',
+            component: TestbedDataComponent
+          },
+          {
+            path: 'data',
+            children: [
+              {
+                path: 'create',
+                component: TestbedDataCreateComponent
+              },
+            ]
+          },
+          {
+            path: 'object',
+            component: TestbedObjectComponent
+          },
+          {
+            path: 'script',
+            component: TestbedScriptComponent
+          },
+          {
+            path: 'script',
+            children: [
+              {
+                path: 'create',
+                component: ScriptCreateComponent
+              },
+              {
+                path: 'edit',
+                component: ScriptEditComponent
+              }
+            ]
+          },
+          {
+            path: 'suite',
+            component: TestbedSuiteComponent
+          },
+          {
+            path: 'suite',
+            children: [
+              {
+                path: 'create',
+                component: SuiteCreateComponent
+              },
+              {
+                path: 'edit',
+                component: SuiteEditComponent
+              }
+            ]
+          }
+         ]
+      },     
       {
         path: 'performance',
         children: [
           {
             path: 'load-generator',
             component: LoadGeneratorComponent
+          },
+          {
+            path: 'load-generator',
+            children: [
+              {
+                path: 'create',
+                component: LoadCreateComponent
+              }
+            ]
           }
         ]
       },

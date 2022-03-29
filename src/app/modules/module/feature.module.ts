@@ -44,9 +44,41 @@ import { SandboxCreateTableRequestsComponent } from './api/sandbox/widgets/sandb
 import { SandboxCreateTableAdvanceComponent } from './api/sandbox/widgets/sandbox-create/sandbox-create-table-advance/sandbox-create-table-advance.component';
 import { SandboxCreateTableRulesComponent } from './api/sandbox/widgets/sandbox-create/sandbox-create-table-rules/sandbox-create-table-rules.component';
 import { SandboxCreateTableClientComponent } from './api/sandbox/widgets/sandbox-create/sandbox-create-table-client/sandbox-create-table-client.component';
+import { SchemaCreateTableParameterComponent } from './api/schema/widgets/schema-create/schema-create-table-parameter/schema-create-table-parameter.component';
+import { SandboxEditComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit.component';
+import { SandboxEditTableGeneralComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit-table-general/sandbox-edit-table-general.component';
+import { SandboxEditTableRequestComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit-table-request/sandbox-edit-table-request.component';
+import { SandboxEditTableAdvanceComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit-table-advance/sandbox-edit-table-advance.component';
+import { SandboxEditTableRulesComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit-table-rules/sandbox-edit-table-rules.component';
+import { SandboxEditTableClientComponent } from './api/sandbox/widgets/sandbox-edit/sandbox-edit-table-client/sandbox-edit-table-client.component';
+import { CardTableComponent } from './api/card-repository/widgets/card-table/card-table.component';
+import { CardCreateComponent } from './api/card-repository/widgets/card-create/card-create.component';
+import { CardEditComponent } from './api/card-repository/widgets/card-edit/card-edit.component';
+import { TestbedDataComponent } from './test-bed/testbed-data/testbed-data.component';
+import { TestbedObjectComponent } from './test-bed/testbed-object/testbed-object.component';
+import { TestbedScriptComponent } from './test-bed/testbed-script/testbed-script.component';
+import { TestbedSuiteComponent } from './test-bed/testbed-suite/testbed-suite.component';
+import { TestbedDataCreateComponent } from './test-bed/testbed-data/widgets/testbed-data-create/testbed-data-create.component';
+import { ScriptTableComponent } from './test-bed/testbed-script/widgets/script-table/script-table.component';
+import { ScriptCreateComponent } from './test-bed/testbed-script/widgets/script-create/script-create.component';
+import { ScriptCreateTableGeneralComponent } from './test-bed/testbed-script/widgets/script-create/script-create-table-general/script-create-table-general.component';
+import { ScriptCreateTableActionsComponent } from './test-bed/testbed-script/widgets/script-create/script-create-table-actions/script-create-table-actions.component';
+import { ScriptEditComponent } from './test-bed/testbed-script/widgets/script-edit/script-edit.component';
+import { ScriptEditTableGeneralComponent } from './test-bed/testbed-script/widgets/script-edit/script-edit-table-general/script-edit-table-general.component';
+import { ScriptEditTableActionsComponent } from './test-bed/testbed-script/widgets/script-edit/script-edit-table-actions/script-edit-table-actions.component';
+import { SuiteTableComponent } from './test-bed/testbed-suite/widgets/suite-table/suite-table.component';
+import { SuiteCreateComponent } from './test-bed/testbed-suite/widgets/suite-create/suite-create.component';
+import { SuiteCreateGeneralComponent } from './test-bed/testbed-suite/widgets/suite-create/suite-create-general/suite-create-general.component';
+import { SuiteCreateEmailComponent } from './test-bed/testbed-suite/widgets/suite-create/suite-create-email/suite-create-email.component';
+import { SuiteEditComponent } from './test-bed/testbed-suite/widgets/suite-edit/suite-edit.component';
+import { SuiteEditGeneralComponent } from './test-bed/testbed-suite/widgets/suite-edit/suite-edit-general/suite-edit-general.component';
+import { SuiteEditEmailComponent } from './test-bed/testbed-suite/widgets/suite-edit/suite-edit-email/suite-edit-email.component';
+import { LoadCreateComponent } from './performance/load-generator/widgets/load-create/load-create.component';
+import { LoadTableComponent } from './performance/load-generator/widgets/load-table/load-table.component';
+
 
 @NgModule({
-  declarations: [DashboardComponent, LoginComponent, ProjectComponent, RoleComponent, UserComponent, SchemaComponent, SandboxComponent, CardRepositoryComponent, ResponseBuilderComponent, TestBedComponent, LoadGeneratorComponent, FunctionalReportComponent, PerformanceReportComponent, SandboxReportComponent, ProjectTableComponent, ProjectCreateComponent, RoleTableComponent, RoleCreateComponent, RoleCreateTableGeneralComponent, RoleCreateModuleComponent, UserTableComponent, UserEditComponent, UserTabsComponent, SchemaTableComponent, SchemaCreateComponent, SchemaCreateTableGeneralComponent, ProjectEditComponent, RoleEditComponent, SchemaEditComponent, SchemaEditTableGeneralComponent, SandboxTableComponent, SandboxCreateComponent, SandboxCreateTableGeneralComponent, SandboxCreateTableRequestsComponent, SandboxCreateTableAdvanceComponent, SandboxCreateTableRulesComponent, SandboxCreateTableClientComponent,],
+  declarations: [DashboardComponent, LoginComponent, ProjectComponent, RoleComponent, UserComponent, SchemaComponent, SandboxComponent, CardRepositoryComponent, ResponseBuilderComponent, TestBedComponent, LoadGeneratorComponent, FunctionalReportComponent, PerformanceReportComponent, SandboxReportComponent, ProjectTableComponent, ProjectCreateComponent, RoleTableComponent, RoleCreateComponent, RoleCreateTableGeneralComponent, RoleCreateModuleComponent, UserTableComponent, UserEditComponent, UserTabsComponent, SchemaTableComponent, SchemaCreateComponent, SchemaCreateTableGeneralComponent, ProjectEditComponent, RoleEditComponent, SchemaEditComponent, SchemaEditTableGeneralComponent, SandboxTableComponent, SandboxCreateComponent, SandboxCreateTableGeneralComponent, SandboxCreateTableRequestsComponent, SandboxCreateTableAdvanceComponent, SandboxCreateTableRulesComponent, SandboxCreateTableClientComponent, SchemaCreateTableParameterComponent, SandboxEditComponent, SandboxEditTableGeneralComponent, SandboxEditTableRequestComponent, SandboxEditTableAdvanceComponent, SandboxEditTableRulesComponent, SandboxEditTableClientComponent, CardTableComponent, CardCreateComponent, CardEditComponent, TestbedDataComponent, TestbedObjectComponent, TestbedScriptComponent, TestbedSuiteComponent, TestbedDataCreateComponent, ScriptTableComponent, ScriptCreateComponent, ScriptCreateTableGeneralComponent, ScriptCreateTableActionsComponent, ScriptEditComponent, ScriptEditTableGeneralComponent, ScriptEditTableActionsComponent, SuiteTableComponent, SuiteCreateComponent, SuiteCreateGeneralComponent, SuiteCreateEmailComponent, SuiteEditComponent, SuiteEditGeneralComponent, SuiteEditEmailComponent, LoadCreateComponent, LoadTableComponent,],
   imports: [CommonModule, MaterialModule, NgChartsModule, MatTableModule, SharedModule, RouterModule],
 })
 export class FeatureModule {}

@@ -1,0 +1,87 @@
+<div class="grid-container">
+    <div class="grid-header">
+        <div class="search-container">
+            <span class="search-icon bx bx-search">
+                Edit Card
+            </span>
+        </div>
+        <div class="grid-header-right">
+            <hero-icon name="trash" class="w-4 h-4 cursor-pointer"></hero-icon>
+        </div>
+    </div>
+    <div class="p-4">
+        <form class="p-8">
+            <div>
+                <div class="input-container">
+                    <label for="">Name</label>
+                    <input type="text" value="BNI">
+                </div>
+                <div class="flex space-x-5">
+                    <div class="input-container">
+                        <label for="">Type</label>
+                        <select class="form-select appearance-none" aria-label="Default select example">
+                            <option selected>ICC</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Category</label>
+                        <select class="form-select appearance-none" aria-label="Default select example">
+                            <option selected>Debit</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="input-container">
+                        <label for="">Number</label>
+                        <input type="text" value="52102933010009">
+                    </div>
+                    <div class="input-container">
+                        <label for="">Expiry Date (MMYY)</label>
+                        <input type="text" value="0622">
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="input-container">
+                        <label for="">CVV2</label>
+                        <input type="text" value="0381">
+                    </div>
+                    <div class="input-container">
+                        <label for="">Pin</label>
+                        <input type="text" value="1234">
+                    </div>
+                </div>
+                <hr>
+                <div class="input-container mt-3">
+                    <label for="">Track 1</label>
+                    <input type="text">
+                </div>
+                <div class="input-container">
+                    <label for="">Track 2</label>
+                    <input type="text" value="51293100238100001">
+                </div>
+                <div class="input-container">
+                    <label for="">Track 3</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-container">
+                <label for="">EMV Track</label>
+                <input type="textarea" value="9F1S000831LFF0133">
+            </div>
+            <div>
+                <input type="checkbox">
+                <label class="ml-3" for="">EMV Tag</label>
+            </div>
+        </form>
+        <div class="text-center">
+            <button type="submit" class="btn-submit-form">Create</button>
+            <app-button-back></app-button-back>
+        </div>
+    </div>
+</div>

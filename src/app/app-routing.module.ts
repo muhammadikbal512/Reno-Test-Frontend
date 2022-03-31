@@ -40,6 +40,7 @@ import { LoadCreateComponent } from './modules/module/performance/load-generator
 import { LoadEditComponent } from './modules/module/performance/load-generator/widgets/load-edit/load-edit.component';
 import { FunctionalViewComponent } from './modules/module/statistic/functional-report/widgets/functional-view/functional-view.component';
 import { SandboxReportViewComponent } from './modules/module/statistic/sandbox-report/widgets/sandbox-report-view/sandbox-report-view.component';
+import { PerformanceReportViewComponent } from './modules/module/statistic/performance-report/widgets/performance-report-view/performance-report-view.component';
 
 
 const routes: Routes = [
@@ -264,6 +265,15 @@ const routes: Routes = [
             component: PerformanceReportComponent
           },
           {
+            path: 'performance-report',
+            children: [
+              {
+                path: 'id',
+                component: PerformanceReportViewComponent
+              }
+            ]
+          },
+          {
             path: 'sandbox-report',
             component: SandboxReportComponent
           },
@@ -288,9 +298,8 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/Home/dashboard',
     pathMatch: 'full'
-
   }
 ];
 

@@ -3,13 +3,13 @@ import { ChartData, ChartType, ChartConfiguration } from 'chart.js'
 import { BaseChartDirective } from 'ng2-charts'
 
 @Component({
-  selector: 'app-functional-view',
-  templateUrl: './functional-view.component.html',
-  styleUrls: ['./functional-view.component.css']
+  selector: 'app-sandbox-report-view',
+  templateUrl: './sandbox-report-view.component.html',
+  styleUrls: ['./sandbox-report-view.component.css']
 })
-export class FunctionalViewComponent implements OnInit {
+export class SandboxReportViewComponent implements OnInit {
   public MessagesLabels: string[] = [ 'Match', 'Mismatch' ];
-  public RulesLabels: string[] = [ 'Pass', 'Fail' ];
+  public RulesLabels: string[] = [ 'Business', 'Default' ];
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
   date = new Date();
 
@@ -51,7 +51,5 @@ export class FunctionalViewComponent implements OnInit {
   public RulesChartOptions: ChartConfiguration['options'] = {
     responsive: true,
   }
-
-  
 
 }

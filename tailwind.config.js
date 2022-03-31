@@ -1,5 +1,9 @@
 module.exports = {
   mode: 'jit',
+  purge: [
+    './src/**/*.html',
+    './src/**/*.css',
+  ],
     content: [
       './src/**/*.{html,ts}',
       './node_modules/tw-elements/dist/js/**/*.js'

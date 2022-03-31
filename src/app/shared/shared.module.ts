@@ -39,6 +39,12 @@ import {
   plus,
   play,
   trendingUp,
+  lockClosed,
+  externalLink,
+  link,
+  logout,
+  cloud,
+  download,
    } from 'ng-heroicon';
 import { ButtonBackComponent } from './button-back/button-back.component'
 
@@ -85,7 +91,13 @@ import { ButtonBackComponent } from './button-back/button-back.component'
       puzzle,
       plus,
       play,
-      trendingUp
+      trendingUp,
+      lockClosed,
+      externalLink,
+      link,
+      logout,
+      cloud,
+      download
   }, {
       defaultHostDisplay: 'block',
   })

@@ -1,39 +1,88 @@
 <header>
     <div class="header-content">
-        <button (click)="onClick()" class="navbutton">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-        <div class="dropdown relative header-logout">
-            <div class="m-auto flex">
+        <!-- <h1>Dashboard</h1> -->
+        <div class="header-logout">
+            <div class="dropdown">
                 <hero-icon name="question-mark-circle" class="mr-7 w-5 h-5"></hero-icon>
                 <hero-icon name="bell" class="mr-7 w-5 h-5"></hero-icon>
-                <hero-icon name="cog" class="mr-7 w-5 h-5"></hero-icon>
+                    <hero-icon name="cog" class="mr-7 w-5 h-5 dropdown-toggle cursor-pointer" id="dropdownMenuSetting" data-bs-toggle="dropdown"
+                    aria-expanded="false"></hero-icon>
+                          
+                <!-- Dropdown menu profile -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuSetting">
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="cloud" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Import/Export</p>
+                        </a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="clock" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Env Variable</p>
+                        </a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="logout" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">DSL</p>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="logout" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Connector</p>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="logout" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Agent</p>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="download" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Agent Download</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1d" data-bs-toggle="dropdown"
-                aria-expanded="false" type="button">
-                <span class="sr-only">Open user menu</span>
-                <img src="../../../assets/0.jpg" alt="user photo">
-            </button>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d">
-                <li>
-                    <a class="dropdown-item" href="#">Action</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-                <hr class="h-0 my-2 border border-solid border-t-0 border-gray-700 opacity-25" />
-                <li>
-                    <a routerLink="/login" class="dropdown-item" href="#">Logout</a>
-                </li>
-            </ul>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1d" data-bs-toggle="dropdown"
+                    aria-expanded="false" type="button">
+                    <span class="sr-only">Open user menu</span>
+                    <img src="../../../assets/0.jpg" alt="user photo">
+                </button>            
+                <!-- Dropdown menu profile -->
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1d">
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="pencil-alt" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Edit Profile</p>
+                        </a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a class="dropdown-item relative" href="#">
+                            <hero-icon name="clock" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Session Report</p>
+                        </a>
+                    </li>
+                    <hr />
+                    <li class="flex">
+                        <a routerLink="/login" class="dropdown-item relative" href="#">
+                            <hero-icon name="logout" class="h-5 w-5 absolute"></hero-icon>
+                            <p class="pl-8">Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
